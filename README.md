@@ -2,5 +2,7 @@
 
 * Open index.html in browser (file:///path/to/index.html)
 * Open dev tools
-* Note that first console log directly after Bluebird CDN is loaded is a Bluebird promise
-* Note that the second console after amcharts loads is a native bluebird promise
+* Bluebird CDN is loaded
+* The two console logs are a Bluebird promise and one of the prototype functions belonging to the promise
+* amCharts is loaded
+* The next two console logs show that the basic global promise is still a Bluebird promise but the Promise.prototype.then function has changed

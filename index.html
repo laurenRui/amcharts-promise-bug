@@ -5,11 +5,15 @@
 <body>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.7.2/bluebird.min.js"></script>
 	<script>
+		console.log("Before amCharts:");
 		console.log("Bluebird promise", window.Promise);
+		console.log("Bluebird Promise.prototype.then", window.Promise.prototype.then);
 	</script>
 	<script src="./amcharts/core.js"></script>
 	<script>
-		console.log("Native promise", window.Promise);
+		console.log("After amCharts:");
+		console.log("Bluebird promise", window.Promise);
+		console.log("Native Promise.prototype.then", window.Promise.prototype.then);
 	</script>
 </body>
 </html>
